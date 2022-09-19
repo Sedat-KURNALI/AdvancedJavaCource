@@ -27,8 +27,6 @@ public class G02genericsMethods {
         System.out.println("maxBulGeneric(35,63,34) = " + maxBulGeneric(35, 63, 34));
         System.out.println("maxBulGeneric(\"21\",\"35\",\"55\") = " + maxBulGeneric("21", "35", "55"));
         System.out.println("maxBulGeneric(35.2, 63.2, 34.3) = " + maxBulGeneric(35.2, 63.2, 34.3));
-
-
     }
 
     public static <T> void diziYazdir(T[] dizi) {//generic method create edildi
@@ -36,7 +34,7 @@ public class G02genericsMethods {
     }
 
     public static <T extends Comparable <T> > T maxBulGeneric(T a, T b, T c) {
-        //bunu generic return type olan bir methoda cvevirin
+        //bunu generic return type olan bir methoda cevirin
         //cevap => comparable interface i kullanilmali
         T max = a;
         if (b.compareTo(max) > 0) {

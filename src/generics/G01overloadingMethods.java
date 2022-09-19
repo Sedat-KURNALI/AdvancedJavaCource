@@ -39,7 +39,7 @@ public class G01overloadingMethods {
 
     }
 
-    private static void diziYazdirObject(Object[] dizi) {//bu m,ethoda sana hersey gelebilir demis oluyorum string int double ...
+    private static void diziYazdirObject(Object[] dizi) {//bu methoda sana hersey gelebilir demis oluyorum string int double ...
         Arrays.stream(dizi).forEach(System.out::print);
     }
 
