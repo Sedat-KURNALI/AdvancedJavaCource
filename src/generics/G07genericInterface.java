@@ -4,8 +4,8 @@ package generics;
 
 public class G07genericInterface {
     //main class
-    //1 math islem yapan mehodu olan bir generic interface create diniz
-    //2 islme yapan bir class create edip bu classtan interface i implement edin
+    //1 math islem yapan methodu olan bir generic interface create diniz
+    //2 islem yapan bir class create edip bu classtan interface i implement edin
     //3 main methoddan obj ler create edip call yapin
     public static void main(String[] args) {
         UsAlanClass<Float> floatUs=new UsAlanClass<>();
@@ -29,7 +29,6 @@ class UsAlanClass <T extends Number> implements MathIslem <T> {
 
     @Override
     public double usAl(T t, T u) {//pow() methodu pm olarak double alir bundan dolayi pm leri dooble donusturuduk
-
         return  Math.pow(t.doubleValue(),u.doubleValue());
     }
 }
